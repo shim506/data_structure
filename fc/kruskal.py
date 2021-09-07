@@ -2,13 +2,14 @@
 # 2. 간선을 낮은 순서대로 연결하되 신장트리의
 # 조건을 어기지 않는지를 확인한다.
 
-
 # 싸이클의 판단유무는 union-find 알고리즘을 이용함
 # 각각의 부분집합의 root-node를 확인해서 다를경우 싸이클 x -  합침
 # union(합칠) 경우 높이가 높은 root-node를 기준으로 합침
 # 높이가 같을경우 하나의 트리의 높이를 임의로 올려 합침
 
 #edge 의 원소중 숫자가 가장 앞에 오는 것은 정렬에 이용하기 위해
+
+
 graph = {
 'vertices' : ['A' , 'B' , 'C' ,'D' ,'E' , 'F' ,'G'], 
 'edges' :[
@@ -37,55 +38,61 @@ graph = {
     ]
 }
 
-parent = dict()     #각각의 노드의 부모 노득
-rank = dict()       #각각의 노드의 높이를 의미 처음이 0
+rank =dict()
+parent = dict()
 
-def make_set(node):
-    parent[node] = node
-    rank[node] = 0
+def intitial(graph):
+    for vertex in graph["vertices"]:
+        rank[vertex] = 0
+        parent[vertex] = vertex
 
+
+# 싸이클의 판단유무는 union-find 알고리즘을 이용함
+# 각각의 부분집합의 root-node를 확인해서 다를경우 
 def find(node):
-    # path compression
-    # 상위 node를 계속 찾아 가다가 parent_node가 node인상황
-    # 즉 root_node 를 찾으면 멈추게됨 
     if parent[node] != node:
         parent[node] = find(parent[node])
-    return parent[node]     
+    return parent[node]
 
-def union(node_v , node_u):
-    root_v = find(node_v)
-    root_u = find(node_u)
-
-    if rank[root_u] > rank[root_v]:
-        parent[root_v] = root_u
-    elif rank[root_u] < rank[root_v]:
-        parent[root_u] = root_v
+# union(합칠) 경우 높이가 높은 root-node를 기준으로 합침
+# 높이가 같을경우 하나의 트리의 높이를 임의로 올려 합침
+# 가장 우선은 각각의 root_node를 찾는것이다
+def union(node_start:str , node_end : str):
+    root1 = find(node_start)
+    root2 = find(node_end)
+    
+    if rank[root1] > rank[root2]:
+        parent[root2] = root1
+    elif rank[root2] == rank[root1]:
+        parent[root1] = root2
+        rank[root2] +=1
     else:
-        rank[root_v] += 1 
-        parent[root_u] = root_v
-    return
+         parent[node_start] = node_end
+
 
 def kruskal(graph):
-    mst = list()
+    
+    result_list = list()
+    edges  = graph["edges"]
 
     # 1. 초기화
-    for node in graph["vertices"]:
-        make_set(node) 
-    
+    intitial(graph)
 
-    # 2. 간선 weight 기반 sorting 
-    edges = graph['edges']
+    # 2. 정렬
     edges.sort()
 
-
-    # 3. 간선연결 (싸이클 없는)
+    # 3. union-find
     for edge in edges:
-        weight, node_v , node_u = edge
-        if find(node_v) != find(node_u):
-            union(node_v,node_u)
-            mst.append(edge)
+        weight , start_node , end_node = edge
+        if find(start_node) != find(end_node):
+            union(start_node , end_node)
+            result_list.append(edge)
+    
+    return result_list
 
-    return mst  
+
+
+
 
 
 print(kruskal(graph))
