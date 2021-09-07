@@ -12,7 +12,7 @@ class Fixed_queue:
     
     def __init__(self , capacity:int) -> None:
         # front 는 값이 존재 하는 공간을 가리키고
-        # rear 는 값이 새로들어갈 공간 즉 빈 공간을 가리킨다
+        # rear 는 값이 새로들어갈 공간 즉 빈 공간의 가장 앞을 가리킨다
         self.capacity = capacity
         self.front = 0
         self.rear = 0

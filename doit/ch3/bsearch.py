@@ -23,8 +23,6 @@ def bin_search(a:Sequence , key:Any) -> int:
             return pc
         
 
-
-
 lst = [1,2,10 ,11 ,15 , 16,17]
 x = bin_search(lst , 13)
 print(x)
