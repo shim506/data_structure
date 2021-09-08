@@ -42,8 +42,13 @@ def prim(start_node:str , edges):
             connected_node.add(end_node)
             mst.append(vertex)
             for vertex in adjacent_edge[end_node]:
-                heapq.heappush(vertex_list , vertex)
-            
+                # 추가적인 최적화 -> heappush 에 비용이 들기때문에 추가
+                # end_node 가 다시 start_node가 되고 또다른 end_node가 생길때
+                # 해당 end_node가 이미 connected_node 에 존재한다면 추가 하지 않는 조건 추가
+
+                if vertex[2] not in connected_node:
+                    heapq.heappush(vertex_list , vertex)
+             
 
         
     return mst
