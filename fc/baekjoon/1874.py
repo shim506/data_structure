@@ -1,5 +1,5 @@
 # 제일 큰수를 한번찍은 상태라면 반드시 그 후부터는 내림차순을 따라야한다
-
+# 스택과 수열
 n = int(input())
 sequence_list = []
 orign_stack = [i+1 for i in range(n)]
