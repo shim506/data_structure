@@ -1,3 +1,4 @@
+# 프린터 큐
 case = int(input())
 
 result_list = []

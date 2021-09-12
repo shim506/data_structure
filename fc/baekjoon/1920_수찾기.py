@@ -7,7 +7,7 @@ dic = DefaultDict(list)
 lst1 = list(map(int , input().split()))
 
 for i in lst1:
-    dic[i].append( i)
+    dic[i].append(1)
 
 N = int(input())
 lst2 = list(map(int , input().split()))

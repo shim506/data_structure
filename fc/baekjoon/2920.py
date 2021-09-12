@@ -1,4 +1,4 @@
-
+# 음계
 
 lst = []
 acs_list , des_list = [] , [] 
