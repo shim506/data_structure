@@ -26,7 +26,6 @@ for i in range(case):
     dic = dict()
     number = dict()
 
-
     for j in range(group):
         name1 , name2 =  input().split()
         
