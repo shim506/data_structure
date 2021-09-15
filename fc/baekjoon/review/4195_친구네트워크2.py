@@ -5,7 +5,10 @@ test = int(input())
 def find(name):
     if dic[name] == name:
         return name
-    return find(dic[name])
+    
+    parent = find(dic[name])
+    dic[name] = parent
+    return parent
 
 def union(name1 , name2):
     n1 = find(name1)
