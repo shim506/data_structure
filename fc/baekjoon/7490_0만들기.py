@@ -1,8 +1,6 @@
 # 0 만들기
 import copy
 
-
-
 def recurr(array :list  , n):
     if len(array) == n :
         operators_list.append(copy.deepcopy(array))
