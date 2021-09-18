@@ -1,21 +1,21 @@
 # 0만들기
 import copy
 
-def make_operate_list(lst:list , val):
-    if len(lst) == val:
+def make_operate_list(lst:list , n):
+    if len(lst) == n:
         operators_list.append(copy.deepcopy(lst))
         return
     else:
-        lst.append("+")
-        make_operate_list(lst , val)
+        lst.append(" ")
+        make_operate_list(lst , n)
         lst.pop()
 
-        lst.append("-")
-        make_operate_list(lst , val)
+        lst.append("+")
+        make_operate_list(lst , n)
         lst.pop()
         
-        lst.append(" ")
-        make_operate_list(lst ,val)
+        lst.append("-")
+        make_operate_list(lst ,n)
         lst.pop()
         
     

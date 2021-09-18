@@ -1,6 +1,3 @@
 from collections import defaultdict
 
-
-list_dict = defaultdict(float )
-print(list_dict["key1"])
-
+print(int("0x80",16))
