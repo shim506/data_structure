@@ -1,3 +1,5 @@
 from collections import defaultdict
 
-print(int("0x80",16))
+lst = [1,2,3]
+
+print(max(lst[0] , lst[-2]))
