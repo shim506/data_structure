@@ -2,4 +2,10 @@ from collections import defaultdict
 
 lst = [1,2,3]
 
-print(max(lst[0] , lst[-2]))
+for i in range(1,3):
+    print(i)
+
+
+for i in range(len(lst)):
+    print(i)
+
