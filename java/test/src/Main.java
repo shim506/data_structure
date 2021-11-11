@@ -19,10 +19,7 @@ public class Main {
     int[] dis = {1, -1, 5};
     int[] ch;
 
-    public int BFS(int x, int y) {
-        ch = new int[10001];
-        ch[s]
-    }
+
     /*
     Node root;
 
@@ -97,6 +94,13 @@ public class Main {
         tree.BFS(tree.root);
         //sub(1);
 */
+
+        ArrayList<String> strings = new ArrayList<>();
+        strings.add("dd");
+
+        ArrayList<String> strings1 = (ArrayList<String>) strings.clone();
+
+        System.out.println(strings == strings1);
 
 
     }
