@@ -78,29 +78,16 @@ public class Main {
 */
 
     public static void main(String[] args) {
-/*
-        Main tree = new Main();
-        tree.root = new Node(1);
-        tree.root.lt = new Node(2);
-        tree.root.rt = new Node(3);
-        tree.root.lt.lt = new Node(4);
-        tree.root.lt.rt = new Node(5);
-        tree.root.rt.lt = new Node(6);
-        tree.root.rt.rt = new Node(7);
-        //tree.DFS(tree.root);
+        String x = "10x^5 + 3x^2 + 5x^1";
+
+        ArrayList<Term> terms = new ArrayList<>();
 
 
-        queue.add(tree.root);
-        tree.BFS(tree.root);
-        //sub(1);
-*/
+        String[] expStringList = x.split("\\+");
+        for (int i = 0; i < expStringList.length; i++) {
+            terms.add(new Term(Integer.parseInt(expStringList[i].substring(0, expStringList[i].indexOf('x'))), Integer.parseInt(expStringList[i].substring(expStringList[i].indexOf('^'), expStringList[i].length() - 1))));
+        }
 
-        ArrayList<String> strings = new ArrayList<>();
-        strings.add("dd");
-
-        ArrayList<String> strings1 = (ArrayList<String>) strings.clone();
-
-        System.out.println(strings == strings1);
 
 
     }

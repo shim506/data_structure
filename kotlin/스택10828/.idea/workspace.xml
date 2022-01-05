@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a5b5894-74c3-4953-a42c-b82c7c5b5273" name="Default Changelist" comment="" />
+    <list default="true" id="9a5b5894-74c3-4953-a42c-b82c7c5b5273" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../java/test/out/production/test/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/test/out/production/test/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/test/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/test/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../단어뒤집기9093/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../단어뒤집기9093/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../덩치7568/src/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../덩치7568/src/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../문자열반복2675/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../문자열반복2675/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../블랙잭2798/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../블랙잭2798/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../소수찾기/src/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../소수찾기1978/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../소수찾기1978/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="2388NaWJF1ooOeAXygVMEeiPvr3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -15,6 +37,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="스택10828" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -26,5 +69,16 @@
       <updated>1641104314404</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
