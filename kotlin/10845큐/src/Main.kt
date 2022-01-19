@@ -3,6 +3,7 @@ import java.io.InputStreamReader
 import java.lang.StringBuilder
 import java.util.*
 
+// 요세푸스 문제 1158
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
 
 
