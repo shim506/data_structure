@@ -13,25 +13,17 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
         arr[it + 1] = readLine().toInt()
     }
 
-    dp[0] = arr[0]
-    dp[1] = dp[0] + arr[1]
-    dp[2] = dp[1] + arr[2]
-
-    for (i in 3..N) {
-        if (i < N ) {
-            dp[i] = maxOf(
-                dp[i - 3] + arr[i - 1] + arr[i],
-                dp[i - 2] + arr[i],
-                dp[i - 1]
-            )
-        } else {
-            dp[i] = maxOf(
-                dp[i - 3] + arr[i - 1] + arr[i],
-                dp[i - 2] + arr[i]
-            )
+    for (i in 0..N) {
+        when (i) {
+            0 -> dp[i] = 0
+            1 -> dp[i] = arr[1]
+            2 -> dp[i] = arr[1] + arr[2]
+            else ->
+                dp[i] = maxOf(
+                    dp[i - 3] + arr[i - 1] + arr[i],
+                    dp[i - 2] + arr[i]
+                )
         }
     }
-    println(dp.maxOrNull())
-
-
+    println(dp[N])
 }
