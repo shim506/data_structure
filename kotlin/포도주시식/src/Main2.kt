@@ -16,10 +16,7 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
 
 
     for (i in 3..N) {
-        dp[i] = max(
-            max(dp[i - 1] ,dp[i - 3] + arr[i] + arr[i - 2]),
-            dp[i - 3] + arr[i - 1] + arr[i]
-        )
+        dp[i] = max(max(dp[i - 1], dp[i - 2] + arr[i]), dp[i - 3] + arr[i - 1] + arr[i])
     }
     dp.forEach { println(it) }
     println(dp.maxOrNull())
