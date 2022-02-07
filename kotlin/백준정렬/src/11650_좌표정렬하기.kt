@@ -3,6 +3,7 @@ import java.io.InputStreamReader
 import java.lang.StringBuilder
 import kotlin.math.max
 
+/*
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     val N = readLine().toInt()
 
@@ -29,5 +30,24 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
             break
         }
     }
+
+}
+*/
+
+fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
+    val N = readLine().toInt()
+
+    val result = arrayListOf<Pair<Int, Int>>()
+
+    repeat(N) {
+        val xy = readLine().split(" ").map { it.toInt() }
+        result.add(Pair(xy[0], xy[1]))
+    }
+
+    result.sortBy { it.second }
+    result.sortBy { it.first }
+
+
+    result.forEach { println("${it.first} ${it.second}") }
 
 }
