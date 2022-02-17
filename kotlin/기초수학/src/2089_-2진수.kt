@@ -17,7 +17,7 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
             remain = 1
             value--
         } else {
-            remain = (value % -2)
+            remain = ((value % -2).toInt())
         }
         value /= -2
         result.add(remain)
