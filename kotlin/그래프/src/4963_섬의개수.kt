@@ -63,13 +63,3 @@ fun bfs_4963(i: Int, j: Int, width: Int, height: Int) {
 }
 
 
-fun printArray(array: Array<Array<Boolean>>) {
-    for (i in 1..array.size) {
-        for (j in 1..array[0].size) {
-            print("${array[i][j]} ")
-        }
-        println()
-    }
-    println()
-    println()
-}
