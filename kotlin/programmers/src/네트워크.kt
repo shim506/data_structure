@@ -7,11 +7,11 @@ fun main() {
     arr[0] = intArrayOf(1, 1, 0)
     arr[1] = intArrayOf(1, 1, 0)
     arr[2] = intArrayOf(0, 0, 1)
-    //{ intArrayOf(1, 2, 3) , intArrayOf(1, 2, 3), intArrayOf(1, 2, 3) }
     println(solution.solution(3, arr))
+
 }
 
-class Solution {
+class Solution네트워크 {
     fun solution(n: Int, computers: Array<IntArray>): Int {
         var answer = 0
         // 자기자신 말고 1인점을 찾는다
@@ -52,6 +52,4 @@ class Solution {
             }
         }
     }
-
-
 }
