@@ -2,7 +2,7 @@ import java.util.LinkedList
 
 
 fun main() {
-    val solution = Solution()
+    val solution = Solution네트워크()
     var arr = Array<IntArray>(3) { IntArray(3) }
     arr[0] = intArrayOf(1, 1, 0)
     arr[1] = intArrayOf(1, 1, 0)

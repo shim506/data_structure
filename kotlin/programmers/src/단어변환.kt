@@ -1,7 +1,7 @@
 fun main() {
 }
 
-class Solution {
+class Solution단어변환 {
     val changingList = mutableListOf<MutableList<String>>()
 
     fun solution(begin: String, target: String, words: Array<String>): Int {
