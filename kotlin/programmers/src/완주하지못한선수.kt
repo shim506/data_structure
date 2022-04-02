@@ -1,4 +1,4 @@
-class Solution {
+class Solution완주{
     val hashMap = hashMapOf<String, Int>()
     fun solution(participant: Array<String>, completion: Array<String>): String {
         participant.forEach {
