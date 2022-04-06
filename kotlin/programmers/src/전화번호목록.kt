@@ -1,4 +1,4 @@
-class Solution {
+class Solution전화번호목록{
     val hashMap = hashMapOf<Char, MutableList<String>>()
     fun solution(phone_book: Array<String>): Boolean {
         val answer = true
