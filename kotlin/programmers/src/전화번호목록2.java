@@ -6,11 +6,11 @@ class 전화번호목록2 {
     public boolean solution(String[] phone_book) {
         boolean answer = true;
 
-        for (String phoneBookStr: phone_book) {
-            for (String hashStr: hashMap.)) {
-
-            }
-        }
+//        for (String phoneBookStr: phone_book) {
+//            for (String hashStr: hashMap.)) {
+//
+//            }
+//        }
         for (int i = 0; i < phone_book.length; i++) {
             for (int j = i + 1; j < phone_book.length; j++) {
                 if (phone_book[i].startsWith(phone_book[j])) {

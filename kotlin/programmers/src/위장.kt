@@ -1,4 +1,4 @@
-class Solution {
+class Solution위장 {
     fun solution(clothes: Array<Array<String>>): Int {
         //return clothes.groupBy { it[1] }.values.map { it.size + 1 }.reduce { valX, valY -> valX * valY }.minus(1) 
         val hashMap = hashMapOf<String, Int>()
