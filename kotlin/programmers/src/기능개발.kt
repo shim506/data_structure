@@ -1,14 +1,15 @@
 import java.util.LinkedList
+import java.util.*
 
 fun main() {
     // 큐 형태로 + Pair
-    val sol = Solution()
+    val sol = Solution기능개발()
 
     val ans = sol.solution(intArrayOf(93, 30, 55), intArrayOf(1, 30, 5))
     ans.forEach { println(it) }
 }
 
-class Solution {
+class Solution기능개발{
 
     fun solution(progresses: IntArray, speeds: IntArray): IntArray {
         var answer = mutableListOf<Int>()
